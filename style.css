@@ -1,147 +1,98 @@
-* {
-    box-sizing: border-box;
-    scroll-behavior: smooth;
-}
-
-html, body, .content {
+html, body {
     margin: 0px;
     padding: 0px;
     border: none;
+    width: 100%;
+    height: 100%;
 }
 
 body {
-    background-color: rgb(28, 28, 28);
-    color: white;
+    background-color: black;
 }
 
-.content {
-    font-family: Arial, Helvetica, sans-serif;
+#terminal {
+    box-sizing: border-box;
     width: 100%;
-    max-width: 1200px;
+    height: 100%;
+    max-width: 1000px;
     margin: auto;
-}
-
-.content a {
-    text-decoration: none;
+    padding: 10px;
     color: white;
-}
-
-.content a:hover {
-    color: orange;
-}
-
-.navbar {
-    position: fixed;
-    top: 20%;
-    width: 300px;
-    text-align: right;
-    padding-right: 20px;
-}
-
-.name-text {
-    display: block;
-    font-size: 52px;
-    font-style: italic;
-    padding-bottom: 20px;
-    color: orange;
-}
-
-.navbar a {
-    padding-top: 10px;
-    padding-bottom: 10px;
-    display: block;
-    font-size: 24px;
-}
-
-.social-link {
-    display: inline-block !important;
-    padding-left: 15px;
-}
-
-.social-link img {
-    height: 30px;
-}
-
-.main-container {
-    padding-left: 30px;
-    padding-right: 30px;
-    margin-left: 300px;
+    font-family: 'Courier New', Courier, monospace;
     font-size: 18px;
-    line-height: 1.5em;
+    line-height: 30px;
+    overflow-y: auto;
+    scrollbar-color: rgb(150, 150, 150) rgb(32, 32, 32);
+    user-select: none;
+    cursor: default;
 }
 
-.main-container ul {
-    margin-top: 10px;
-    margin-bottom: 10px;
+.object-text {
+    padding-left: 3px;
+    padding-right: 3px;
+    margin-left: -3px;
+    margin-right: -3px;
+    border-radius: 5px;
+    display: inline-block;
 }
 
-.main-container img {
+.available {
+    background-color: rgb(255, 255, 255);
+    color: black;
+    cursor: pointer;
+}
+
+.selected {
+    border: 1px solid rgb(128, 128, 128);
+    color: rgb(128, 128, 128);
+    margin-left: -4px;
+    margin-right: -4px;
+    margin-top: -1px;
+    margin-bottom: -1px;
+}
+
+.completable {
+    border: 1px solid white;
+    color: white;
+    background-color: rgb(32, 32, 32);
+    margin-left: -4px;
+    margin-right: -4px;
+    margin-top: -1px;
+    margin-bottom: -1px;
+    cursor: pointer;
+}
+
+.button-menu {
+    display: inline-block;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    background-color: rgb(30, 30, 30);
+    font-size: 14px;
+    border-radius: 0px 10px 10px 10px;
+    border: 1px solid grey;
+    overflow: hidden;
+}
+
+.button-menu > span {
+    display: block;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.button-menu > button {
+    cursor: pointer;
+    display: block;
     width: 100%;
-    height: auto;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    border: none;
+    color: white;
+    background-color: black;
+    padding: 10px;
 }
 
-.block {
-    margin-top: 15px;
-    margin-bottom: 15px;
-    padding: 20px;
-    background-color: rgb(42, 42, 42);
-    border-radius: 20px;
-}
-
-.section-header {
-    display: block;
-    font-size: 36px;
-    padding-top: 40px;
-    padding-bottom: 20px;
-}
-
-.experience-header {
-    font-size: 24px;
-    display: block;
-    font-weight: bold;
-}
-
-.experience-subtitle {
-    display: block;
-    font-style: italic;
-    color: rgb(174, 174, 174);
-}
-
-@media only screen and (max-width: 750px) {
-    .navbar {
-        top: 0px;
-        width: 100%;
-        text-align: left;
-        padding-right: 0px;
-        padding-left: 15px;
-        padding-bottom: 15px;
-        background-color: rgb(42, 42, 42);
-        box-shadow: rgba(0, 0, 0, 0.30) 0px 20px 20px;
-    }
-
-    .name-text {
-        padding-bottom: 0px;
-        font-size: 42px;
-    }
-
-    .navbar a {
-        display: inline-block;
-        padding-top: 0px;
-        padding-bottom: 0px;
-        padding-right: 10px;
-    }
-
-
-    .social-link {
-        padding-left: 0;
-    }
-
-    .main-container {
-        padding-left: 15px;
-        padding-right: 15px;
-        margin-left: 0px;
-        padding-top: 80px;
-    }
+.button-menu > button:hover {
+    color: black;
+    background-color: white;
 }
