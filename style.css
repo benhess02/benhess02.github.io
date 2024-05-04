@@ -41,8 +41,8 @@ html, body {
 }
 
 .social-icons img {
-    height: 40px;
-    width: auto;
+    height: 40px !important;
+    width: auto !important;
 }
 
 .content p {
