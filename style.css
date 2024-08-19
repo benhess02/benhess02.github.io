@@ -48,17 +48,15 @@ html, body {
 .content p {
     color: rgb(70, 70, 70);
     font-size: 18px;
-    line-height: 1.8em;
-    margin-top: 10px;
-    margin-bottom: 10px;
 }
 
 .about {
-    padding-bottom: 20px;
+    padding-bottom: 0px;
+    line-height: 1.8em;
 }
 
 .project {
-    padding-bottom: 50px;
+    margin-bottom: 50px;
 }
 
 .content img {
@@ -72,8 +70,6 @@ html, body {
 
 .content h3 {
     font-size: 22px;
-    margin-top: 10px;
-    margin-bottom: 10px;
 }
 
 .content a {
