@@ -2,7 +2,8 @@
     box-sizing: border-box;
 }
 
-html, body {
+html,
+body {
     margin: 0px;
     padding: 0px;
     border: none;
@@ -22,7 +23,7 @@ html, body {
 .name {
     display: inline-block;
     font-size: 52px;
-    color:black;
+    color: black;
     margin-top: 0px;
     margin-bottom: 0px;
 }
