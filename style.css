@@ -17,7 +17,7 @@ body {
     padding-left: 15px;
     padding-right: 15px;
     font-family: Arial, Helvetica, sans-serif;
-    padding-bottom: 80px;
+    padding-bottom: 50px;
 }
 
 .name {
@@ -32,8 +32,8 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 80px;
-    margin-bottom: 30px;
+    margin-top: 60px;
+    margin-bottom: 15px;
 }
 
 .social-icons {
@@ -49,6 +49,8 @@ body {
 .content p {
     color: rgb(70, 70, 70);
     font-size: 18px;
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
 
 .about {
@@ -57,7 +59,7 @@ body {
 }
 
 .project {
-    margin-bottom: 50px;
+    margin-bottom: 25px;
 }
 
 .content img {
@@ -65,12 +67,14 @@ body {
 }
 
 .content h2 {
-    margin-top: 50px;
+    margin-top: 40px;
     font-size: 32px;
 }
 
 .content h3 {
     font-size: 22px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .content a {
